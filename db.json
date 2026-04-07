@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@gmail.com",
+      "name": "홍길동",
+      "currency": "KRW",
+      "country": "KR",
+      "createdAt": "2026-04-07"
+    }
+  ],
+
+  "transactions": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "expense",
+      "amount": 8000,
+      "categoryId": 1,
+      "title": "점심",
+      "memo": "김치찌개",
+      "date": "2026-04-07",
+      "tripId": null
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "식비",
+      "icon": "🍚",
+      "color": "#FFD600",
+      "type": "expense",
+      "isDefault": true
+    },
+    {
+      "id": 2,
+      "name": "월급",
+      "icon": "💰",
+      "color": "#4CAF50",
+      "type": "income",
+      "isDefault": true
+    }
+  ],
+
+  "budgets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "categoryId": 1,
+      "amount": 300000,
+      "month": "2026-04"
+    }
+  ],
+
+  "trips": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "일본 여행",
+      "country": "JP",
+      "currency": "JPY",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-05",
+      "memo": "오사카 여행",
+      "budget": 1000000
+    }
+  ],
+
+  "settings": [
+    {
+      "userId": 1,
+      "darkMode": false,
+      "notifications": true,
+      "startDayOfMonth": 1
+    }
+  ]
+}
